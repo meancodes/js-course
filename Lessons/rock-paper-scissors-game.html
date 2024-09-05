@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang=""en>
+
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Exercise projects/styles/rock-paper-scissors-game.css">
+
+  <title>Rock Paper Scissors</title>
+
+</head>
+
+
+
+
+<body>
+
+  <p class="title">
+    Rock Paper Scissors Game
+  </p>
+
+  <div class="hands">
+
+    <div onclick="
+    playGame(`ROCK`);
+    ">
+
+      <button>
+      Rock
+      </button>
+
+      <p class="rock rock">
+        &#9994
+      </p>
+
+    </div>
+
+    <div onclick="
+    playGame(`PAPER`);
+    ">
+  
+      <button>
+        Paper
+      </button>
+
+    <p class="rock paper">
+      &#9995
+    </p>
+    
+    </div>
+
+    <div onclick="
+    playGame(`SCISSORS`);
+    ">
+  
+      <button>
+        Scissors
+      </button>
+
+    <p class="rock scissors">
+      &#128406
+    </p>
+    
+    </div>
+  
+  </div>
+
+  <p class="result">
+    Results -<br><br><span class="span space js-result"></span>
+  </p>
+
+  <p class="result">
+    Moves -<br><br><span class="span space js-moves"></span>
+  </p>
+
+  <p class="result">
+    Score -<br><br><span class="span js-score">Wins: 0, Losses: 0, Ties: 0</span>
+  </p>
+
+  <button onclick="
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
+  localStorage.removeItem('score');
+
+  updateScoreElement();
+
+  document.querySelector('.js-result')
+    .innerHTML = '';
+
+  document.querySelector('.js-moves')
+    .innerHTML = '';
+  " class="reset-score-button">
+    Reset Score
+  </button>
+
+  <p class="calculator">
+    <a href="calculator.html" style="color: magenta;">Click here</a> to see the final version of the Calculator project.
+  </p>
+  
+
+
+
+
+
+  <script src="../Exercise projects/scripts/rock-paper-scissors-game.js"></script>
+
+</body>
+
+
+</html>

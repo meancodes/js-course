@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle</title>
+
+  <style>
+
+    .amazon {
+      font-size: 20px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .cart {
+      background-color: rgb(215, 216, 20);
+      border: none;
+      padding: 5px 30px;
+      border-radius: 50px;
+    }
+
+    .req {
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+    }
+
+    .later {
+      background-color: rgb(230, 230, 230);
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-left: 18px;
+    }
+
+    .js-button {
+      width: 70px;
+      background-color: black;
+      color: wheat;
+      padding: 10px;
+      font-weight: bold;
+      border: none;
+      margin-right: 12px;
+    }
+
+    .is-toggled {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <p class="amazon">
+    Amazon button
+  </p>
+  
+  <button class="cart">
+    Add to Cart
+  </button>
+
+  <br>
+
+  <p class="amazon">
+    Uber buttons
+  </p>
+
+  <button class="req">
+    Request now
+  </button>
+
+  <button class="later">
+    Schedule for later
+  </button>
+
+  <br>
+  <br>
+
+  <br>
+  <br>
+
+  <button class="js-button button1" onclick="toggle ('button1');">
+    Gaming
+  </button>
+
+  <button class="js-button button2" onclick="toggle ('button2');">
+    Music
+  </button>
+
+  <button class="js-button button3" onclick="toggle ('button3');">
+    Tech
+  </button>
+
+
+
+
+
+  <script>
+
+    const buttons = {
+      game : document.querySelector('.button1'),
+      music : document.querySelector('.button2'),
+      tech : document.querySelector('.button3')
+    }
+
+    function toggle (button) {
+
+      if (button === 'button1') {
+        if(buttons.game.classList.contains('is-toggled')) {
+          buttons.game.classList.remove('is-toggled')
+        } else {buttons.game.classList.add('is-toggled')}
+      }
+      if (button === 'button2') {
+        if(buttons.music.classList.contains('is-toggled')) {
+          buttons.music.classList.remove('is-toggled')
+        } else {buttons.music.classList.add('is-toggled')}
+      }
+      if (button === 'button3') {
+        if(buttons.tech.classList.contains('is-toggled')) {
+          buttons.tech.classList.remove('is-toggled')
+        } else {buttons.tech.classList.add('is-toggled')}
+      }
+    }
+    
+
+  </script>
+
+</body>
+
+
+</html>

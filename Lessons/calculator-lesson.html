@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="'en">
+
+<head>
+
+  <meta charset="'UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: whitesmoke;
+    }
+
+    .body{
+      background-color: gray;
+      padding: 10% 0;
+      margin: 5rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 21em;
+    }
+
+    .console{
+      width: 18em;
+      height: 5em;
+      background-color: rgb(54, 75, 46);
+      margin: 0 auto 2em;
+    }
+
+    .button{
+      display: flex;
+      gap: 1em;
+      margin: auto;
+    }
+
+    button{
+      width: 3em;
+      height: 2.5em;
+      background-color: black;
+      color: whitesmoke;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  </style>
+
+</head>
+
+
+
+
+<body>
+
+  <div class="body">
+
+    <div class="console"></div>
+
+    <div class="button">
+    
+      <button style="background-color: red;" onclick="
+      calculation = '';
+      console.log(calculation);
+        ">
+        AC
+      </button>
+    
+      <button onclick="
+      calculation = '';
+      console.log(calculation);
+        ">
+        OFF
+      </button>
+    
+      <button onclick="
+        calculation = '';
+        console.log(calculation);
+        ">
+        C
+      </button>
+  
+      <button onclick="
+      calculation = '';
+      console.log(calculation);
+        ">
+        ON
+      </button>
+    </div>
+
+    <div class="button">
+    
+      <button onclick="
+        calculation += '1';
+        console.log(calculation);
+        ">
+        1
+      </button>
+    
+      <button onclick="
+        calculation += '2';
+        console.log(calculation);
+        ">
+        2
+      </button>
+    
+      <button onclick="
+        calculation += '3';
+        console.log(calculation);
+        ">
+        3
+      </button>
+  
+      <button onclick="
+        calculation += ' * ';
+        console.log(calculation);
+        ">
+        x
+      </button>
+    </div>
+  
+    <div class="button">
+    
+      <button onclick="
+        calculation += '4';
+        console.log(calculation);
+        ">
+        4
+      </button>
+    
+      <button onclick="
+        calculation += '5';
+        console.log(calculation);
+        ">
+        5
+      </button>
+    
+      <button onclick="
+        calculation += '6';
+        console.log(calculation);
+        ">
+        6
+      </button>
+  
+      <button onclick="
+        calculation += ' / ';
+        console.log(calculation);
+        ">
+        /
+      </button>
+    </div>
+  
+    <div class="button">
+    
+      <button onclick="
+        calculation += '7';
+        console.log(calculation);
+        ">
+        7
+      </button>
+    
+      <button onclick="
+        calculation += '8';
+        console.log(calculation);
+        ">
+        8
+      </button>
+    
+      <button onclick="
+        calculation += '9';
+        console.log(calculation);
+        ">
+        9
+      </button>
+  
+      <button onclick="
+        calculation += ' - ';
+        console.log(calculation);
+        ">
+        -
+      </button>
+    </div>
+  
+    <div class="button">
+    
+      <button onclick="
+        calculation += '00';
+        console.log(calculation);
+        ">
+        00
+      </button>
+    
+      <button onclick="
+        calculation += '0';
+        console.log(calculation);
+        ">
+        0
+      </button>
+    
+      <button onclick="
+        calculation += ' + ';
+        console.log(calculation);
+        ">
+        +
+      </button>
+  
+      <button onclick="
+      eval(calculation);
+      calculation = eval(calculation)
+      console.log(calculation)
+      ">
+        =
+      </button>
+    </div>
+
+  </div>
+  
+
+
+
+
+  <script>
+
+    let calculation = '';
+
+  </script>
+
+</body>
+
+</html>

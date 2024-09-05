@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>Dom Exercise</title>
+    </head>
+    
+    
+    
+    <body>
+        
+        <button class="button">
+            9a
+        </button>
+        
+        <button class="button2">
+            9b
+        </button>
+        
+        <button class="heads"
+        onclick="heads()">
+            heads
+        </button>
+        
+        <button class="tails"
+        onclick="tails()">
+            tails
+        </button>
+        
+        <p>
+            You chose: <span class="span"></span>
+        </p>
+        
+        <input class="input" placeholder="Name"
+        onkeydown="enterButton()">
+        
+        <button onclick="myName();">
+            Submit
+        </button>
+        
+        <p>Your name is: <span class="span2"></span></p>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script>
+            
+            const input = document.querySelector('.input');
+           
+           function myName() {
+               document.querySelector('.span2').innerHTML = input.value;
+           }
+           
+           function enterButton(){
+               if (event.key === 'Enter') {
+            myName();
+        }
+           }
+           
+            console.log(document.querySelector('.button').innerHTML);
+            
+            document.querySelector('.button2').innerHTML = '9b done!';
+            
+            function heads() {
+                document.querySelector('.span').innerHTML = 'heads';
+            }
+            
+            function tails() {
+                document.querySelector('.span').innerHTML = 'tails';
+            }
+            
+        </script>
+        
+    </body>
+    
+    
+</html>

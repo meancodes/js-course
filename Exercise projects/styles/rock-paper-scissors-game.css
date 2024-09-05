@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.hands {
+  display: inline-flex;
+  gap: 15px;
+  margin-inline: auto;
+}
+
+.hands button {
+  width: 70px;
+  padding-top: 3px;
+  font-weight: bold;
+  padding-bottom: 3px;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+.hands div {
+  text-align: center;
+  cursor: pointer;
+}
+
+.hands div:hover {
+  opacity: 0.5;
+}
+
+.hands p {
+  border: 3px solid white;
+  border-radius: 50%;
+  font-size: 30px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.hands button {
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.5;
+}
+
+button:active{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.result {
+  color: rgb(150, 150, 250);
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.span {
+  color: white;
+  font-size: 20px;
+}
+
+.reset-score-button {
+  background-color: #fff;
+  border: none;
+  font-size: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-top: 70px;
+  border-radius: 50px;
+}
+
+.foot {
+    margin-top: 100px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.foot a{
+    text-decoration: none;
+}
